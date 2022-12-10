@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Changa&display=swap');
+
+
+
+*{
+    font-family: 'Cairo', sans-serif;
+
+}
+body{
+    background-color: whitesmoke;
+}
+
+.main{
+    background-image: url(../images/silver-metallic-color-sport-sedan-road.png);
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 780px;
+    background-position: center;
+    box-shadow: 0 5px 13px #757474;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.navrow{
+    background-color: #EF4B24;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 3px #00000085;
+}
+.navrow p{
+    color: white;
+}
+
+
+.fa {
+    content: "\f10b";
+    margin-right: 5px;
+    color: #ffffff;
+}
+
+.text {
+   
+    margin-top: 8rem;
+    color: white;
+    font-weight: 800;
+  }
+  
+ h1  {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+  }
+  
+  .word {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .letter {
+    display: inline-block;
+    position: relative;
+    float: left;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+  }
+  
+  .letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  
+  .letter.behind {
+    transform: rotateX(-90deg);
+  }
+  
+  .letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .wisteria {
+    color: #EF4B24;
+  }
+  
+  .belize {
+    color: #EF4B24;
+  }
+  
+  .pomegranate {
+    color: #EF4B24;
+  }
+  
+  .green {
+    color: #EF4B24;
+  }
+  
+  .midnight {
+    color: #EF4B24;
+  }
+  .navbar{
+    display: none !important;
+  }
+  @media only screen and (max-width: 600px) {
+    .nav-item p{
+        color: white;
+    }
+    .navbar-custom{
+        background-color: #ef4b24 !important;
+    }
+    .text h1{
+        font-size:25px !important;
+        
+    }
+    .text {
+        margin-top: 18rem;
+        margin-right: 75px;
+    }
+    .navrow{
+        display: none !important;
+    }
+    
+    .navbar {
+        display: inline !important;}
+        .navbar-toggler-icon{
+            color: white;
+        }
+        .navbar-light .navbar-toggler {
+            color: white !important;
+           
+        }
+       .navbar-collapse:focus-visible{
+            border-color: none !important
+        }
+       .navbar-collapse:focus{
+            border-color: none !important
+        }
+        .counters {
+            background-image: url(../images/black-sport-car-highway-drive-sunset.png);
+            border-radius: 15px;
+            box-shadow: 0 2px 3px #00000085;
+            height: 622px !important;
+            background-position: center;
+            background-size: cover;
+        }
+        .service{
+            background-image: url(../images/tire.png);
+            border-radius: 15px;
+          
+            height: 800px !important;
+            background-position: center;
+            background-size: cover;
+        }
+
+
+        #tilt {
+            top: 22px !important;
+            position: relative;
+            display: block;
+            min-height: 500px;
+            height: auto !important;
+            width: 29vh;
+            margin: 0 auto;
+            transition: box-shadow 0.1s, transform 0.1s;
+            background-image: url(../images/body.png);
+            background-size: 104%;
+            background-repeat: no-repeat;
+        }
+  }
+
+
+  .counter{
+    color: #5c5a5a;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    height: 190px;
+    width: 190px;
+    padding: 30px 25px 25px;
+    margin: 0 auto;
+    border: 3px solid #5c5a5a;
+    border-radius: 20px 20px;
+    position: relative;
+    z-index: 1;
+}
+.counter:before,
+.counter:after{
+    content: "";
+    background: #f3f3f3;
+    border-radius: 20px;
+    box-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    bottom: 15px;
+    right: 15px;
+    z-index: -1;
+}
+.counter:after{
+    background: transparent;
+    width: 100px;
+    height: 100px;
+    border: 15px solid #EF4B24;
+    border-top: none;
+    border-right: none;
+    border-radius: 0 0 0 20px;
+    box-shadow: none;
+    top: auto;
+    left: -10px;
+    bottom: -10px;
+    right: auto;
+}
+.counter .counter-icon{
+    font-size: 35px;
+    line-height: 35px;
+    margin: 0 0 15px;
+    transition: all 0.3s ease 0s;
+}
+.counter:hover .counter-icon{ transform: rotateY(360deg); }
+.counter .counter-value{
+    color: #555;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0 0 20px;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+.counter:hover .counter-value{ text-shadow: 2px 2px 0 #d1d8e0; }
+.counter h3{
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+.counter.blue{
+    color: #5c5a5a;
+    border-color: #5c5a5a;
+}
+.counter.blue:after{
+    border-bottom-color: #EF4B24;
+    border-left-color: #EF4B24;
+}
+@media screen and (max-width:990px){
+    .counter{ margin-bottom: 40px; }
+}
+.serviceText{
+    color: #EF4B24;
+    text-decoration: underline;
+    padding: auto;
+}
+
+.fa-globe ,.fa-rocket{
+    color: #5c5a5a;
+}
+
+.counters{
+    
+  background-image: url(../images/black-sport-car-highway-drive-sunset.png);
+    border-radius: 15px;
+    box-shadow: 0 2px 3px #00000085;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+#count1::after{
+content: '+';
+}
+#count2::after{
+    content: '+';
+    }
+    #count3::after{
+        content: '+';
+        }
+        
+.service{
+    background-image: url(../images/tire.png);
+    border-radius: 15px;
+  
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+.contact{
+
+    border-radius: 15px;
+    box-shadow: 0 2px 3px #00000085;
+}
+.contactcol{
+    background-color: #EF4B24;
+}
+.formcol{
+    background-image: url(../images/contact.png);
+    background-position: center;
+    background-size: cover;
+}
+.contactIcons{
+   
+        animation: full-circle 1.1s infinite;
+    
+}
+@keyframes full-circle {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+a{
+    color: white !important;
+   
+}
+.contact h4{
+    color: whitesmoke;
+    text-decoration: underline;
+}
+.contact a{
+    font-size: 17px !important;
+}
+.contactcol{
+    padding: 40px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.formcol:before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    top: 50px;
+    left: -13px;
+}
+
+#tilt {
+    top: -42px;
+    position: relative;
+    display: block;
+    min-height: 500px;
+    height: auto !important;
+    width: 29vh;
+    margin: 0 auto;
+    transition: box-shadow 0.1s, transform 0.1s;
+    background-image: url(../images/body.png);
+    background-size: 104%;
+    background-repeat: no-repeat;
+}
+.carBody{
+    background-image: url(../images/carBody.png);
+    background-position: center;
+    background-size: cover;
+}
+.body{
+    
+    border-radius: 15px;
+    box-shadow: 0 2px 3px #00000085;
+}
+li{
+    font-size: 25px;
+    color: #5c5a5a;
+}
+footer{
+    color: white;
+    background: #EF4B24;
+}
+
+.vergi{
+    border-radius: 15px;
+    box-shadow: 0 2px 3px #00000085;
+}
+.vergi h3{
+    padding: 20px;
+    text-align: center;
+}
