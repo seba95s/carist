@@ -95,6 +95,7 @@ footer{
     right: 0;
    
 }
+
 .footercol2{
     background-color: #EF4B24;
 }
@@ -183,7 +184,13 @@ footer{
   .navbar{
     display: none !important;
   }
+  .onDesktop{
+    display: block;
+}
   @media only screen and (max-width: 600px) {
+    .onDesktop{
+        display: none !important;
+    }
     .nav-item p{
         color: white;
     }
