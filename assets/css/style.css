@@ -64,7 +64,7 @@ body{
    
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
+   
 
     background-position: center; 
    /* box-shadow: 0 5px 13px #757474;
@@ -85,9 +85,9 @@ body{
     border-bottom-right-radius: 50px;  
     height: 700px; */
 footer{
-    background-image: url(../images/silver-metallic-color-sport-sedan-road\ [Recovered].png); 
+    /* background-image: url(../images/silver-metallic-color-sport-sedan-road\ [Recovered].png); 
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 
     position: fixed;
     height: 90px;
@@ -96,7 +96,15 @@ footer{
     left: 0px;
     right: 0px;
     margin-bottom: 0px;
-    bottom: 0;
+    bottom: -11px;
+}
+.footercol2{
+    background-color: #EF4B24;
+}
+.footercol{
+       background-image: url(../images/silver-metallic-color-sport-sedan-road\ [Recovered].png); 
+    background-size: cover;
+    background-repeat: no-repeat; 
 }
 .navrow{
     background-color: #EF4B24;
