@@ -84,19 +84,16 @@ body{
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;  
     height: 700px; */
+    html{
+        position:relative; 
+        min-height: 100%;
+      }
 footer{
-    /* background-image: url(../images/silver-metallic-color-sport-sedan-road\ [Recovered].png); 
-    background-size: cover;
-    background-repeat: no-repeat; */
-
-    position: fixed;
-    height: 90px;
-  
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
-    bottom: -11px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   
 }
 .footercol2{
     background-color: #EF4B24;
