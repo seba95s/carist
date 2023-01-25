@@ -117,7 +117,7 @@ footer{
 
 .text {
    
-    margin-top: 8rem;
+    margin-right: 5rem;
     color: white;
     font-weight: 800;
     text-align: center;
@@ -189,10 +189,7 @@ footer{
         font-size:25px !important;
         
     }
-    .text {
-        margin-top: 18rem;
-        margin-right: 75px;
-    }
+   
     .navrow{
         display: none !important;
     }
@@ -471,6 +468,7 @@ li{
 	 top: 70%;
 	 transform: translateY(-50%); */
      justify-content: center;
+     margin-bottom: 15rem;
 }
  .column {
 	 margin-top: 3rem;
